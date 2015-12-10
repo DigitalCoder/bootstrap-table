@@ -1,126 +1,135 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>issue #1792</title>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.1/bootstrap-table.min.css">
+  <title>issue #1792</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.2.2/css/flat-ui.min.css">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.1/bootstrap-table.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.1/bootstrap-table.min.css">
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.1/extensions/export/bootstrap-table-export.js"></script>
-    <script src="//rawgit.com/hhurz/tableExport.jquery.plugin/master/tableExport.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.1/bootstrap-table.min.js"></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.1/extensions/toolbar/bootstrap-table-toolbar.js"></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.1/extensions/export/bootstrap-table-export.js"></script>
+  <script src="//rawgit.com/hhurz/tableExport.jquery.plugin/master/tableExport.js"></script>
 </head>
 <body>
-    <h2><a href="https://github.com/wenzhixin/bootstrap-table/issues/1792" target="_blank">Bootstrap-table issue #1792</a></h2>
-    <br>
-    <div id="toolbar">
-        <select class="form-control">
-            <option value="">
-                Export Basic
-            </option>
-            <option value="all">
-                Export All
-            </option>
-        </select>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2><a href="https://github.com/wenzhixin/bootstrap-table/issues/1792" target="_blank">Bootstrap-table issue #1792</a></h2>
     </div>
-    <table class="table table-striped table-hover" data-advanced-search="true"
-    data-cookie="true" data-cookie-id-table="saveId" data-id-table=
-    "advancedTable" data-page-list=" [10, 25, 50, 100, All]" data-pagination=
-    "true" data-search="true" data-show-columns="true" data-show-export="true"
-    data-show-toggle="true" data-sort-name="date" data-sort-order="desc"
-    data-toggle="table" data-toolbar="#toolbar" id="table">
-        <thead>
-            <tr class="text-center">
-                <th class="text-center h6" data-field="date" data-sortable=
-                "true">Date</th>
-                <th class="text-center h6 text-primary" data-field="1"
-                data-sortable="true">A</th>
-                <th class="text-center h6 text-primary" data-field=
-                "2" data-sortable="true">B</th>
-                <th class="text-center h6 text-primary" data-field=
-                "3" data-sortable="true">Fonctionnel</th>
-                <th class="text-center h6 text-primary"
-                data-field="4" data-sortable="true">C</th>
-                <th class="text-center h6 text-primary" data-field="5"
-                data-sortable="true">D</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="text-center"><strong>2015-11-05</strong></td>
-                <td class="text-center"><span class=
-                "label label-lg ">429</span></td>
-                <td class="text-center"><span class=
-                "label label-lg ">619</span></td>
-                <td class="text-center"><span class=
-                "label label-lg ">589</span></td>
-                <td class="text-center"><span class=
-                "label label-lg ">575</span></td>
-                <td class="text-center text-disabled">-</td>
-            </tr>
-            <tr>
-                <td class="text-center"><strong>2015-10-05</strong></td>
-                <td class="text-center"><span class=
-                "label label-lg ">389</span></td>
-                <td class="text-center"><span class=
-                "label label-lg ">579</span></td>
-                <td class="text-center"><span class=
-                "label label-lg x">549</span></td>
-                <td class="text-center"><span class=
-                "label label-lg ">535</span></td>
-                <td class="text-center text-disabled">-</td>
-            </tr>
-            <tr>
-                <td class="text-center"><strong>2015-09-05</strong></td>
-                <td class="text-center"><span class=
-                "label label-lg ">409</span></td>
-                <td class="text-center"><span class=
-                "label label-lg ">599</span></td>
-                <td class="text-center"><span class=
-                "label label-lg ">569</span></td>
-                <td class="text-center"><span class=
-                "label label-lg ">555</span></td>
-                <td class="text-center text-disabled">-</td>
-            </tr>
-            <tr>
-                <td class="text-center"><strong>2015-08-05</strong></td>
-                <td class="text-center"><span class=
-                "label label-lg ">419</span></td>
-                <td class="text-center"><span class=
-                "label label-lg ">609</span></td>
-                <td class="text-center"><span class=
-                "label label-lg ">579</span></td>
-                <td class="text-center"><span class=
-                "label label-lg ">565</span></td>
-                <td class="text-center text-disabled">-</td>
-            </tr>
-            <tr>
-                <td class="text-center"><strong>2015-07-05</strong></td>
-                <td class="text-center"><span class=
-                "label label-lg ">439</span></td>
-                <td class="text-center"><span class=
-                "label label-lg ">629</span></td>
-                <td class="text-center"><span class=
-                "label label-lg ">599</span></td>
-                <td class="text-center"><span class=
-                "label label-lg ">585</span></td>
-                <td class="text-center text-disabled">-</td>
-            </tr>
-            <tr>
-                <td class="text-center"><strong>2015-06-05</strong></td>
-                <td class="text-center"><span class=
-                "label label-lg ">529</span></td>
-                <td class="text-center"><span class=
-                "label label-lg ">719</span></td>
-                <td class="text-center"><span class=
-                "label label-lg ">689</span></td>
-                <td class="text-center"><span class=
-                "label label-lg ">675</span></td>
-                <td class="text-center text-disabled">-</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="toolbar">
+          <select class="form-control">
+              <option value="">
+                  Export Basic
+              </option>
+              <option value="all">
+                  Export All
+              </option>
+          </select>
+      </div>
+      <table
+        id="table"
+        class="table table-striped table-hover"
+
+        data-advanced-search="true"
+        data-id-table="advancedTable"
+
+        data-page-list=" [10, 25, 50, 100, All]"
+        data-pagination="true"
+
+        data-search="true"
+        data-show-columns="true"
+
+        data-show-export="true"
+        data-show-toggle="true"
+
+        data-sort-name="date"
+        data-sort-order="desc"
+
+        data-toggle="table"
+        data-toolbar="#toolbar">
+          <thead>
+              <tr class="text-center">
+                  <th class="text-center h6" data-field="date" data-sortable=
+                  "true">Date</th>
+                  <th class="text-center h6 text-primary" data-field="1"
+                  data-sortable="true">A</th>
+                  <th class="text-center h6 text-primary" data-field=
+                  "2" data-sortable="true">B</th>
+                  <th class="text-center h6 text-primary" data-field=
+                  "3" data-sortable="true">C</th>
+                  <th class="text-center h6 text-primary"
+                  data-field="4" data-sortable="true">D</th>
+                  <th class="text-center h6 text-primary" data-field="5"
+                  data-sortable="true">D</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td class="text-center"><strong>2015-11-05</strong></td>
+                  <td class="text-center">429</span></td>
+                  <td class="text-center">619</span></td>
+                  <td class="text-center">589</span></td>
+                  <td class="text-center">575</span></td>
+                  <td class="text-center text-disabled">-</td>
+              </tr>
+              <tr>
+                  <td class="text-center"><strong>2015-10-05</strong></td>
+                  <td class="text-center">389</span></td>
+                  <td class="text-center">579</span></td>
+                  <td class="text-center"><span class=
+                  "label label-lg x">549</span></td>
+                  <td class="text-center">535</span></td>
+                  <td class="text-center text-disabled">-</td>
+              </tr>
+              <tr>
+                  <td class="text-center"><strong>2015-09-05</strong></td>
+                  <td class="text-center">409</span></td>
+                  <td class="text-center">599</span></td>
+                  <td class="text-center">569</span></td>
+                  <td class="text-center">555</span></td>
+                  <td class="text-center text-disabled">-</td>
+              </tr>
+              <tr>
+                  <td class="text-center"><strong>2015-08-05</strong></td>
+                  <td class="text-center">419</span></td>
+                  <td class="text-center">609</span></td>
+                  <td class="text-center">579</span></td>
+                  <td class="text-center">565</span></td>
+                  <td class="text-center text-disabled">-</td>
+              </tr>
+              <tr>
+                  <td class="text-center"><strong>2015-07-05</strong></td>
+                  <td class="text-center">439</span></td>
+                  <td class="text-center">629</span></td>
+                  <td class="text-center">599</span></td>
+                  <td class="text-center">585</span></td>
+                  <td class="text-center text-disabled">-</td>
+              </tr>
+              <tr>
+                  <td class="text-center"><strong>2015-06-05</strong></td>
+                  <td class="text-center">529</span></td>
+                  <td class="text-center">719</span></td>
+                  <td class="text-center">689</span></td>
+                  <td class="text-center">675</span></td>
+                  <td class="text-center text-disabled">-</td>
+              </tr>
+          </tbody>
+      </table>
+    </div>
+  </div>
+
 </body>
 </script>
 </html>
+
